@@ -4,7 +4,7 @@
   "description": "A template for creating off-chain Zap oracles.",
   "main": "src/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/tsc",
+    "build": "./node_modules/.bin/tsc -t es2018",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -26,7 +26,8 @@
     "request": "^2.88.0",
     "truffle-hdwallet-provider": "git+https://github.com/zapproject/truffle-hdwallet-provider.git",
     "web3": "^1.0.0-beta.35",
-    "websocket": "^1.0.26"
+    "websocket": "^1.0.26",
+    "wolfram-alpha-api": "https://products.wolframalpha.com/api/libraries/javascript/wolfram-alpha-api-1.0.0-rc.1.tgz"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0"
